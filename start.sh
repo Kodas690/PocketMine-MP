@@ -24,7 +24,7 @@ done
 if [ "$PHP_BINARY" == "" ]; then
 	if [ -f ./bin/php7/bin/php ]; then
 		export PHPRC=""
-		PHP_BINARY="./bin/php7/bin/php"
+		PHP_BINARY="./bin/php5/bin/php"
 	elif [[ ! -z $(type php) ]]; then
 		PHP_BINARY=$(type -p php)
 	else
